@@ -1,0 +1,49 @@
+<div class="background" >
+ 
+    <label id="btnAtras" mat-raised-button  (click)="volverHome()"><img style="width: 25px; height: 25px" src="../../../assets/atras.png"></label>
+
+  <div class="headerContent">
+    <div class="CountFt" id="countUs" >
+      <img id="imgUser" src="../assets/user.png" />
+      <label style="text-align: center" >  
+        <pre>Nombre de
+ usuarios:</pre>
+      </label>
+  
+      <label style="font-size: 20px; ">{{ this.data[id - 1].name }}</label>
+    </div>
+    <div class="CountFt" id="countUs">
+      <img id="imgPosts" src="../assets/posts.png" />
+      <label  style="text-align: center">
+        <p>Número de posts:</p>
+      </label>
+      <label id="labelPosts">{{ this.dataPostsU.length }}</label>
+    </div>
+  </div>
+
+
+<div class="contentBody">
+  <div id="lista" scrolly="true" >
+    <ul id="underList" *ngFor="let d of dataAlbums" style="list-style: none">
+      <div >
+        
+        <div class="contentCard">
+          <div style="display: flex;">
+            <div style="margin-top: 5px;">
+              <img src="../../../assets/album.jpeg" style="height: 40px; width:40px;">
+            </div>
+            <div style="margin-left: 10px">
+              <li><b>Numero del album:</b> {{ d.id }}</li>
+              <li><b>Titulo del album:</b> {{ d.title }}</li>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </ul>
+  </div>
+</div>
+  
+</div>
+
+

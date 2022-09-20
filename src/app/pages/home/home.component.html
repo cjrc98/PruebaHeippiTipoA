@@ -1,0 +1,67 @@
+<div class="background">
+  <label id="btnAtras" mat-raised-button  (click)="volverHome()"><img style="width: 25px; height: 25px" src="../../../assets/atras.png"></label>
+
+<div
+  style="
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+
+  "
+>
+<div class="headerContent">
+  <div class="CountFt" id="countUs" >
+    <img id="imgUser" src="../assets/user.png" />
+    <label style="text-align: center"
+      >Número de  
+    </label>
+    <label>
+      usuarios:
+    </label>
+    <br>
+    <label id="labelUser">{{ data.length }}</label>
+  </div>
+  <div class="CountFt" id="countUs">
+    <img id="imgPosts" src="../assets/posts.png" />
+    <label  style="text-align: center">
+      <pre>Número de</pre>
+    </label>
+    <label>
+      posts:
+    </label>
+    <br>
+    <label id="labelPosts">{{ dataPosts.length }}</label>
+  </div>
+</div>
+</div>
+<div id="lista" scrolly="true" >
+  <ul  *ngFor="let d of data" (click)="userIndividual(d.id)">
+    <div class="contact-area">
+      <div class="contact">
+        <main>
+          <section>
+            <div class="content">
+              <img src="../../../assets/user.png" alt="Profile Image">
+              <aside>
+                <h1 style="font-weight: bold;">{{ d.name }}</h1>
+                <div style="display: flex;">
+                  <p style="font-weight: bold;">Correo: </p> <p>{{ d.email }}</p>
+                </div>
+                <div style="display: flex;">
+                  <p style="font-weight: bold;">Telefono: </p> <p>{{d.phone }}</p>
+                </div>
+                <div style="display: flex;">
+                  <p style="font-weight: bold;">Ciudad: </p> <p>{{ d.address.city }}</p>
+                </div>
+               
+              </aside>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+  </ul>
+</div>
+
+</div>

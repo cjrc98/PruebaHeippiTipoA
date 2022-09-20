@@ -1,0 +1,70 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: white;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  
+}
+#imgWel{
+    /* border-radius: 20px;
+    border: 1px solid black;*/
+    position: relative;
+    height: 250px; 
+    width: 250px;
+    top: 40px;
+    display: block;
+    margin: auto;
+}
+#cabecero{
+    text-align: center;
+    
+}
+#piecero{
+    text-align: center;
+    
+}
+#parrafo{
+    color: rgb(70, 69, 69);
+    font-size: 15px;
+}
+#titulo{
+    margin: auto;
+    margin-top: 20px;
+}
+#nombreApp{
+    margin-top: 1px;
+    color: #4a9deb;
+}
+#btnstart{
+    position: relative;
+    color: rgb(255, 255, 255);
+    top: 100px;
+    height: 60px;
+    width: 280px;
+    border-radius: 10px;
+    background-color: #4a9deb;
+    font-size: 20px;
+    border: none;
+}
+#btnstart:hover {
+    background-color: #4a9deb;
+}
+
+#creditos{
+    position: absolute;
+    bottom: 25px;
+    margin-left: 160px;
+    text-decoration: none;
+    color: #4a9deb;
+    font-size: 20px;
+    border: none;
+    width: 0px;
+    height: 4px;
+    border-radius: 10px;
+    
+}
+#creditos:hover{
+    font-size: 24px;
+}
